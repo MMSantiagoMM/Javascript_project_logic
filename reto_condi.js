@@ -13,13 +13,15 @@ function enviarNums() {
     if (num_one && num_two) {
         if (num_one >= num_two) {
             if (num_one === num_two) {
-                retornar.innerHTML += " Los numeros son iguales"
+                retornar.innerHTML = " Los numeros son iguales"
             } else {
-                retornar.innerHTML += num_one + " es mayor"
+                retornar.innerHTML = num_one + " es mayor"
             }
         } else {
             retornar.innerHTML = num_two + "es mayor"
         }
+    }else {
+        retornar.innerHTML = "Falta ingresar uno o ambos números "
     }
 
 

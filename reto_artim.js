@@ -2,7 +2,7 @@ function aniadirTexto() {
     var texto = document.getElementById("texto");
     var mostrar = document.getElementById("mostrar_texto");
 
-    mostrar.innerHTML += texto.value;
+    mostrar.innerHTML = texto.value;
 }
 function enviarNums () {
     var number_one = parseInt(document.getElementById("numero_1").value);
