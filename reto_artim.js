@@ -11,5 +11,5 @@ function enviarNums () {
 
     var resultado = number_one + number_two;
 
-    devolver.innerHTML += resultado;
+    devolver.innerHTML = resultado;
 }
