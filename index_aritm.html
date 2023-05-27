@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operaciones aritmeticas</title>
+    <link rel="stylesheet" href="./style_condi.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo">
+                <img src="./img/Icon.png" alt="" />
+                <h2>Lógica en Javascript</h2>
+            </a>
+            <section class="menu">
+                <a href="./index_aritm.html">Operaciones aritméticas</a>
+                <a href="./index_condiconales.html">Condicionales</a>
+                <a href="">Ciclos For</a>
+                <a href="">Ciclos While</a>
+                <a href="">Arrays</a>
+                <a href="">Funciones</a>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="banner"></section>
+        <section class="container">
+            <section class="statement">
+                <input type="text" name="" id="texto" placeholder="Enunciado del problema" />
+                <input type="button" value="Añadir texto" onclick="aniadirTexto()" id="boton" />
+                <section id="mostrar_texto"></section>
+            </section>
+            <input type="text" id="numero_1" class="input_one" placeholder="Ingrese los valores" />
+            <input type="text" id="numero_2" class="input_one_two" placeholder="Ingrese los valores" />
+            <input type="button" value="Enviar" class="input_two" onclick="enviarNums()" />
+            <section id="retornar_texto"></section>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./reto_artim.js"></script>
+</body>
+
+</html>

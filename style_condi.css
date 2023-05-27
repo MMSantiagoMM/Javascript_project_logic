@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+nav {
+    height: 10rem;
+    display: flex;
+}
+.logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo > img {
+    width: 40%;
+}
+.logo > h2 {
+    color: aliceblue;
+}
+.menu {
+    margin-left: 6rem;
+    width: 80%;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu > a {
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+a:hover {
+    background-color: rgba(16, 14, 119, 0.459);
+}
+.banner {
+    position: relative;
+    padding: 25%;
+    background-image: url("./img/banner.jpg");
+    background-size: cover;
+    z-index: 2;
+}
+.banner::after{
+    content:'' ;
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+    width: 50%;
+    padding: 25%;
+    top: 0;
+    left: 0;
+}
+.container {
+    width: 50%;
+    height: 40rem;
+    position: absolute;
+    top: 18rem;
+    left: 29rem;
+    z-index: 2;
+    background-color: rgba(240, 248, 255, 0.247);
+    border-radius: 1rem;
+}
+.statement {
+    width: 80%;
+    margin: 1rem 7rem;
+    height: 12rem;
+}
+.statement > #texto  {
+    color: rgb(245, 245, 245);
+    font-size: 2rem;
+    width: 40rem;
+    height: 6rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+.statement > #boton {
+    background-color: rgba(165, 42, 42, 0.705);
+    margin-left: 1rem;
+    height: 3rem;
+    width: 11rem;
+}
+.statement > #mostrar_texto {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.input_one, .input_one_two{
+    margin-left: 5rem;
+    margin-top: 9rem;
+    width: 28rem;
+    height: 4rem;
+    border-radius: 1.4rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 255, 0.596);
+    text-align: center;
+    color: white;
+}
+.input_one_two{
+    margin: 1rem 5rem;
+}
+.input_one::placeholder, .input_one_two::placeholder{
+    color:rgba(255, 255, 255, 0.432);
+    text-align: center;
+}
+
+.input_two {
+    position: absolute;
+    margin: 7rem -26rem;
+    border-radius: 1rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: rgba(165, 42, 42, 0.623);
+}
+#retornar_texto {
+    border: 0.1rem solid white;
+    position: absolute;
+    width: 24rem;
+    height: 15rem;
+    background-color: rgba(240, 248, 255, 0.616);
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-left: 40rem;
+    margin-top: -11rem;
+    color: black;
+}
