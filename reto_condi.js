@@ -7,14 +7,16 @@ function aniadirTexto() {
 function enviarNums() {
     var num_one = parseFloat(document.getElementById("numero_1").value);
     var num_two = parseFloat(document.getElementById("numero_2").value);
-    var promedio = (num_one + num_two) / 2;
+    var num_three = parseFloat(document.getElementById("numero_3").value)
+    var promedioNotas = (num_one + num_two + num_three) / 3;
     var retornar = document.getElementById("retornar_texto");
 
-//Hacer un algoritmo que lea las estaturas de dos personas y luego me imprima el promedio de estaturas solo si este es más mayor de 1.70 
-    if (promedio > 1.70) {
-        retornar.innerHTML = promedio.toFixed(2);
+//Elaborar un algoritmo que lea las tres notas de un estudiante e imprima si gano o no la materia
+    
+    if (promedioNotas >= 3) {
+        retornar.innerHTML = "Ganó la materia";
     }else {
-        retornar.innerHTML = " El promedio no es mayor a 1.70"
+        retornar.innerHTML = "Perdió la materia";
     }
 
 }
