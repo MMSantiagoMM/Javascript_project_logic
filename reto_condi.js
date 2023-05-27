@@ -8,15 +8,33 @@ function enviarNums() {
     var num_one = parseFloat(document.getElementById("numero_1").value);
     var num_two = parseFloat(document.getElementById("numero_2").value);
     var num_three = parseFloat(document.getElementById("numero_3").value)
-    var promedioNotas = (num_one + num_two + num_three) / 3;
     var retornar = document.getElementById("retornar_texto");
 
-//Elaborar un algoritmo que lea las tres notas de un estudiante e imprima si gano o no la materia
-    
-    if (promedioNotas >= 3) {
-        retornar.innerHTML = "Ganó la materia";
+    //Hacer una solución que lea tres números y luego los imprima ascendentemente.
+
+    if (num_one > num_two && num_one > num_three) {
+        if (num_two > num_three) {
+            retornar.innerHTML = retornar.innerHTML = num_one + " " + num_two + " " + num_three
+        }else {
+            retornar.innerHTML = num_one + " " + num_three + " " + num_two
+        }
     }else {
-        retornar.innerHTML = "Perdió la materia";
+        if (num_two > num_one && num_two > num_three) {
+            if (num_one > num_three) {
+                retornar.innerHTML = num_two + " " + num_one + " " + num_three
+            } else {
+                retornar.innerHTML = num_two + " " + num_three + " " + num_one
+            }
+        } else {
+            if (num_three > num_one && num_three > num_two) {
+                if (num_one > num_two) {
+                    retornar.innerHTML = num_three + " " + num_one + " " + num_two
+                } else {
+                    retornar.innerHTML = num_three + " " + num_two + " " + num_one
+                }
+                
+            }
+        }
     }
 
 }
