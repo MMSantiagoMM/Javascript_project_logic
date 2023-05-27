@@ -5,25 +5,16 @@ function aniadirTexto() {
     mostrar.innerHTML = texto.value;
 }
 function enviarNums() {
-    var num_one = parseInt(document.getElementById("numero_1").value);
-    var num_two = parseInt(document.getElementById("numero_2").value);
+    var num_one = parseFloat(document.getElementById("numero_1").value);
+    var num_two = parseFloat(document.getElementById("numero_2").value);
+    var promedio = (num_one + num_two) / 2;
     var retornar = document.getElementById("retornar_texto");
 
-
-    if (num_one && num_two) {
-        if (num_one >= num_two) {
-            if (num_one === num_two) {
-                retornar.innerHTML = " Los numeros son iguales"
-            } else {
-                retornar.innerHTML = num_one + " es mayor"
-            }
-        } else {
-            retornar.innerHTML = num_two + "es mayor"
-        }
+//Hacer un algoritmo que lea las estaturas de dos personas y luego me imprima el promedio de estaturas solo si este es más mayor de 1.70 
+    if (promedio > 1.70) {
+        retornar.innerHTML = promedio.toFixed(2);
     }else {
-        retornar.innerHTML = "Falta ingresar uno o ambos números "
+        retornar.innerHTML = " El promedio no es mayor a 1.70"
     }
-
-
 
 }
