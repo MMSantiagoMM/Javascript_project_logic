@@ -113,13 +113,13 @@ nav {
     height: 3rem;
     background-color: rgba(165, 42, 42, 0.623);
 }
-.return {
+#retornar {
     border: 0.1rem solid white;
     position: absolute;
     width: 20rem;
-    height: 10rem;
+    height: 14rem;
     background-color: rgba(240, 248, 255, 0.616);
-    margin: 5.2rem -1rem;
+    margin: -9rem 43rem;
     font-size: 3rem;
     text-align: center;
 }
