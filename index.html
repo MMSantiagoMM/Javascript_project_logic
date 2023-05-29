@@ -6,54 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
+    <link rel="stylesheet" href="./css/style_index.css" />
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inicio</title>
-        <link rel="stylesheet" href="./css/style_index.css" />
-    </head>
-
-    <body>
-        <header>
-            <nav>
-                <a href="./index.html" class="logo">
-                    <img src="./img/Icon.png" alt="" />
-                    <h2>Lógica en Javascript</h2>
-                </a>
-                <section class="menu">
-                    <a href="./index_aritm.html">Operaciones aritméticas</a>
-                    <a href="./index_condiconales.html">Condicionales</a>
-                    <a href="./index_for.html">Ciclos For</a>
-                    <a href="./index_fibonacci.html">Fibonacci</a>
-                    <a href="">Arrays</a>
-                    <a href="">Funciones</a>
-                </section>
-            </nav>
-        </header>
-        <main>
-            <section class="banner"></section>
-            <section class="container">
-                <section class="statement">
-                    <input type="text" name="" id="texto" placeholder="Enunciado del problema" />
-                    <input type="button" value="Añadir texto" onclick="aniadirTexto()" id="boton" />
-                    <section id="mostrar_texto"></section>
-                </section>
-                <input type="text" name="numero" id="numero" class="input_one box" placeholder="Ingrese los valores" />
-                <input type="submit" value="Enviar" class="input_two" />
-                <section id="retornar"></section>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo">
+                <img src="./img/Icon.png" alt="" />
+                <h2>Lógica en Javascript</h2>
+            </a>
+            <section class="menu">
+                <a href="./index_aritm.html">Operaciones aritméticas</a>
+                <a href="./index_condiconales.html">Condicionales</a>
+                <a href="./index_for.html">Ciclos For</a>
+                <a href="./index_fibonacci.html">Fibonacci</a>
+                <a href="">Arrays</a>
+                <a href="./index_modulo.html">Modulo</a>
             </section>
-        </main>
-        <footer></footer>
-    </body>
+        </nav>
+    </header>
+    <main>
+        <section class="banner"></section>
+        <section class="container">
+            <section class="statement">
+                <input type="text" name="" id="texto" placeholder="Enunciado del problema" />
+                <input type="button" value="Añadir texto" onclick="aniadirTexto()" id="boton" />
+                <section id="mostrar_texto"></section>
+            </section>
+            <input type="text" name="numero" id="numero" class="input_one box" placeholder="Ingrese los valores" />
+            <input type="submit" value="Enviar" class="input_two" />
+            <section id="retornar"></section>
+        </section>
+    </main>
+    <footer></footer>
+</body>
 
-    </html>
+</html>
 </body>
 
 </html>
